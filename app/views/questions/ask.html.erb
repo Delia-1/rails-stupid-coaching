@@ -1,0 +1,28 @@
+<%# <h2> <mark> Stupid Coaching </mark> </h2>
+    <form action="/answer" method="get" data-turbo="false">
+      <div class="form-group m-3">
+        <label for="input-user" class=""></label>
+        <input type="text" name="ask" id="input-user" placeholder="tell something to your coach">
+      </div>
+         <div class="form-group">
+        <input type="submit" value="Ask!" class="m-3">
+    </div>
+</form> %>
+
+
+<h2 class="text-center my-4">
+  <mark>Stupid Coaching</mark>
+</h2>
+
+<div class="container d-flex justify-content-center">
+  <form action="/answer" method="get" class="w-50 p-4 shadow rounded" data-turbo="false">
+    <div class="form-group mb-3">
+      <label for="input-user" class="form-label">Your Question</label>
+      <input type="text" name="ask" id="input-user" class="form-control" placeholder="Tell something to your coach">
+    </div>
+
+    <div class="form-group text-center">
+      <input type="submit" value="Ask!" class="btn btn-primary mt-3">
+    </div>
+  </form>
+</div>

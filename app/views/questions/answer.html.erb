@@ -1,0 +1,26 @@
+<%# <h2> <mark> Stupid Coaching </mark> </h2>
+<p> Question: <%= @question %></p>
+<%# <%= @response %>
+
+<%#
+<%= link_to "Ask a new question", ask_path %>
+
+
+<h2 class="text-center my-4">
+  <mark>Stupid Coaching</mark>
+</h2>
+
+<div class="container d-flex justify-content-center my-5">
+  <div class="card shadow-lg w-75 p-4 rounded">
+    <div class="card-body">
+      <h4 class="card-title text-center mb-3">Your Question</h4>
+      <p class="card-text text-center fs-4 mb-4"><%= @question %></p>
+      <h5 class="text-center mb-4">Coach's Response:</h5>
+      <p class="text-center lead"><%= @response %></p>
+
+      <div class="text-center mt-4">
+        <%= link_to "Ask a new question", ask_path, class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>
